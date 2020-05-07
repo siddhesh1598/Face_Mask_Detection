@@ -16,7 +16,7 @@ class Detector:
 		# initialize the base model
 		baseModel = MobileNetV2(weights="imagenet", 
 			include_top=False,
-			input_tensor=Input(shape=inputShape)
+			input_tensor=Input(shape=inputShape))
 
 		# build additional layer on top of the baseModel
 		headModel = baseModel.output
