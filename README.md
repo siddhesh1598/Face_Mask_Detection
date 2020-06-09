@@ -1,19 +1,23 @@
 # Face_Mask_Detection
 
-Detecting faces from the webcam and to determine whether the person is wearing a mask or not. The code used MobileNetV2 as a base model for transfer learning and is trained on Medical-mask-dataset from kaggle consisting of 678 images of people wearing/not wearing masks. 
+Detecting faces from the webcam and to determine whether the person is wearing a mask or not. The code uses MobileNetV2 as a base model for transfer learning and is trained on Medical-mask-dataset from kaggle consisting of 678 images of people wearing/not wearing masks. 
+
+## Technical Concepts
+**MobileNetV2:** The paper can be found [here](https://arxiv.org/abs/1801.04381)
+
 
 ## Getting Started
 
 Clone the project repository to your local machine, then follow up with the steps as required.
 
-## Requirements
+### Requirements
 
 After cloning the repository, install the necessary requirements for the project.
 ```
 pip install -r requirements.txt
 ```
 
-## Training the model
+### Training
 
 The maskNet.model file is pre-trained in the images from the [Medical-Mask-Dataset](https://www.kaggle.com/vtech6/medical-masks-dataset). If you wish to train the model from scratch on your own dataset, prepare your dataset in the following way:
 1. Load the images in the "*images*" folder
@@ -24,8 +28,11 @@ You can then train the model by using the train.py file
 ```
 python train.py --dataset dataset
 ```
+![alt text](https://github.com/siddhesh1598/Face_Mask_Detection/blob/master/plot.png?raw=true)
 
-## Testing the model
+The plot for Training and Validation Loss and Accuracy.
+
+### Testing
 
 To test the model on your webcam, use the main.py file. 
 ```
