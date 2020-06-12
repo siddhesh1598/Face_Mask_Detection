@@ -1,5 +1,7 @@
 # Face_Mask_Detection
 
+![alt text](https://github.com/siddhesh1598/Face_Mask_Detection/blob/master/thumbnail.jpg?raw=true)
+
 Detecting faces from the webcam and to determine whether the person is wearing a mask or not. The code uses MobileNetV2 as a base model for transfer learning and is trained on Medical-mask-dataset from kaggle consisting of 678 images of people wearing/not wearing masks. 
 
 ## Technical Concepts
