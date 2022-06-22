@@ -1,5 +1,5 @@
 matplotlib==3.0.2
-numpy==1.18.1
+numpy==1.22.0
 opencv_python==4.0.0.21
 tensorflow==2.0.1
 imutils==0.5.2
